@@ -219,9 +219,9 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 10px 20px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  padding: 10px 22px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
   margin: 0px;
 }
 

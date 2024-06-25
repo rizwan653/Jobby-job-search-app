@@ -89,6 +89,10 @@
   cursor: pointer;
 }
 
+.login-button:hover{
+  background-color: #453ceb;
+}
+
 .error-message {
   align-self: start;
   font-size: 12px;
@@ -97,4 +101,22 @@
   font-family: 'Roboto';
   line-height: 16px;
   color: #ff0b37;
+}
+
+.guest-login-btn {
+  margin-top: 10px;
+  background-color: #4dc9fa;
+  padding: 8px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  color: #000000;
+  font-weight: 500;
+  font-family: Roboto;
+  font-size: 15px;
+}
+
+.guest-login-btn:hover {
+  background-color: #05b1f5;
 }

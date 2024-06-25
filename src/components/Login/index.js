@@ -44,6 +44,25 @@ class Login extends Component {
     }
   }
 
+  onClickGuestLogin = async () => {
+    const guestDetails = {
+      username: 'rahul',
+      password: 'rahul@2021',
+    }
+    const apiUrl = 'https://apis.ccbp.in/login'
+    const options = {
+      method: 'POST',
+      body: JSON.stringify(guestDetails),
+    }
+    const response = await fetch(apiUrl, options)
+    const data = await response.json()
+    if (response.ok) {
+      this.onSubmitSuccess(data.jwt_token)
+    } else {
+      this.onSubmitFailure(data.error_msg)
+    }
+  }
+
   render() {
     const {username, password, showSubmitError, errorMsg} = this.state
     const token = Cookies.get('jwt_token')
@@ -88,6 +107,13 @@ class Login extends Component {
             Login
           </button>
           {showSubmitError && <p className="error-message">*{errorMsg}</p>}
+          <button
+            type="button"
+            className="guest-login-btn"
+            onClick={this.onClickGuestLogin}
+          >
+            Guest Login
+          </button>
         </form>
       </div>
     )

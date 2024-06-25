@@ -87,7 +87,7 @@
 }
 
 .nav-link:hover {
-  color: rgb(97, 28, 177);
+  color: rgb(98, 200, 218);
 }
 
 .logout-desktop-btn {
@@ -103,7 +103,7 @@
   padding: 12px 42px;
 }
 
-.logout-desktop-btn:hover{
+.logout-desktop-btn:hover {
   background-color: #251eaf;
 }
 
